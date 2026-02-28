@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Whisper Speech to Text</title>
+</head>
+
+<body style="background:#0f172a; color:white; font-family:sans-serif; display:flex; justify-content:center; margin-top:80px;">
+
+<div style="background:#1e293b; padding:30px; border-radius:12px; text-align:center; width:420px; box-shadow:0 0 20px rgba(0,0,0,0.5);">
+
+    <h1>🎤 Speech → Text</h1>
+
+    <form method="POST" enctype="multipart/form-data">
+        <input type="file" name="audio" required
+        style="margin:15px 0; padding:10px; width:100%; background:black; color:white; border:none; border-radius:8px;">
+
+        <button type="submit"
+        style="padding:10px 20px; background:#22c55e; border:none; border-radius:8px; cursor:pointer; font-weight:bold;">
+            Transcribe
+        </button>
+    </form>
+
+    <div style="margin-top:20px; background:black; padding:15px; border-radius:8px; min-height:60px; text-align:left;">
+        {{ message }}
+    </div>
+
+</div>
+
+</body>
+</html>
